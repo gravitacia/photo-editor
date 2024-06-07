@@ -12,11 +12,10 @@
 		103246492C120276005F8798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 103246482C120276005F8798 /* Assets.xcassets */; };
 		1032464C2C120276005F8798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1032464B2C120276005F8798 /* Preview Assets.xcassets */; };
 		1053A03A2C121CAA00364109 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1053A0392C121CAA00364109 /* GoogleService-Info.plist */; };
-		1053A03E2C12226000364109 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A03D2C12226000364109 /* ImageEditorView.swift */; };
 		1053A0402C12228300364109 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A03F2C12228300364109 /* ImagePicker.swift */; };
-		1053A0422C12236E00364109 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A0412C12236E00364109 /* CanvasView.swift */; };
-		1053A0442C12239E00364109 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A0432C12239E00364109 /* TextEditorView.swift */; };
-		1053A0462C12240000364109 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A0452C12240000364109 /* EditView.swift */; };
+		1053A0482C132F8500364109 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A0472C132F8500364109 /* DrawingView.swift */; };
+		1053A04A2C132FA000364109 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A0492C132FA000364109 /* TextOverlay.swift */; };
+		1053A04C2C132FCE00364109 /* FilteredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053A04B2C132FCE00364109 /* FilteredImageView.swift */; };
 		10A32CFC2C120AA200D94932 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 10A32CFB2C120AA200D94932 /* FirebaseAnalytics */; };
 		10A32CFE2C120AA200D94932 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 10A32CFD2C120AA200D94932 /* FirebaseAnalyticsOnDeviceConversion */; };
 		10A32D002C120AA200D94932 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 10A32CFF2C120AA200D94932 /* FirebaseAnalyticsSwift */; };
@@ -56,11 +55,10 @@
 		103246482C120276005F8798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1032464B2C120276005F8798 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1053A0392C121CAA00364109 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1053A03D2C12226000364109 /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
 		1053A03F2C12228300364109 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		1053A0412C12236E00364109 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		1053A0432C12239E00364109 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
-		1053A0452C12240000364109 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		1053A0472C132F8500364109 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		1053A0492C132FA000364109 /* TextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOverlay.swift; sourceTree = "<group>"; };
+		1053A04B2C132FCE00364109 /* FilteredImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImageView.swift; sourceTree = "<group>"; };
 		10A32D312C120E7300D94932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A32D332C120EF300D94932 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		10A32D352C120F1E00D94932 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -128,8 +126,6 @@
 				1053A03B2C12221700364109 /* Auth */,
 				103246442C120274005F8798 /* PhotoEditorApp.swift */,
 				103246462C120274005F8798 /* ContentView.swift */,
-				1053A0452C12240000364109 /* EditView.swift */,
-				1053A0412C12236E00364109 /* CanvasView.swift */,
 				103246482C120276005F8798 /* Assets.xcassets */,
 				1032464A2C120276005F8798 /* Preview Content */,
 			);
@@ -157,9 +153,10 @@
 		1053A03C2C12224400364109 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
-				1053A03D2C12226000364109 /* ImageEditorView.swift */,
 				1053A03F2C12228300364109 /* ImagePicker.swift */,
-				1053A0432C12239E00364109 /* TextEditorView.swift */,
+				1053A0472C132F8500364109 /* DrawingView.swift */,
+				1053A0492C132FA000364109 /* TextOverlay.swift */,
+				1053A04B2C132FCE00364109 /* FilteredImageView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -268,14 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A32D342C120EF300D94932 /* AuthViewModel.swift in Sources */,
-				1053A03E2C12226000364109 /* ImageEditorView.swift in Sources */,
-				1053A0422C12236E00364109 /* CanvasView.swift in Sources */,
+				1053A04A2C132FA000364109 /* TextOverlay.swift in Sources */,
 				10A32D322C120E7300D94932 /* AppDelegate.swift in Sources */,
+				1053A04C2C132FCE00364109 /* FilteredImageView.swift in Sources */,
 				1053A0402C12228300364109 /* ImagePicker.swift in Sources */,
 				103246472C120274005F8798 /* ContentView.swift in Sources */,
-				1053A0462C12240000364109 /* EditView.swift in Sources */,
-				1053A0442C12239E00364109 /* TextEditorView.swift in Sources */,
 				10A32D362C120F1E00D94932 /* LoginView.swift in Sources */,
+				1053A0482C132F8500364109 /* DrawingView.swift in Sources */,
 				103246452C120274005F8798 /* PhotoEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct ImagePicker: UIViewControllerRepresentable {
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
